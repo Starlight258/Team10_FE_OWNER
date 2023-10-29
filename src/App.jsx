@@ -8,6 +8,7 @@ import MainLayout from "./layouts/MainLayout";
 import CarwashManagementPage from "./pages/CarwashManagementPage";
 import CarwashItemManagementPage from "./pages/CarwashItemManagementPage";
 import CarwashDetailEditingPage from "./pages/CarwashDetailEditingPage";
+import ErrorPage from "./pages/ErrorPage";
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
               path="/manage/item/edit"
               element={<CarwashDetailEditingPage />}></Route>
           </Route>
+          <Route path="/error" element={<ErrorPage />}></Route>
           <Route path="/login" element={<LoginPage />}></Route>
           <Route path="/signup" element={<SignupPage />}></Route>
           <Route path="/register" element={<RegisterPage />}></Route>
